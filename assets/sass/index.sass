@@ -1,0 +1,39 @@
+// fonts
+
+// colors
+
+// css variables
+
+// mixins
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+@mixin full-center
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    width: 100%
+    height: 100%
+
+// animations
+.fade-enter-active
+    transition: opacity 0.25s ease
+    transition-delay: 0.25s
+
+.fade-leave-active
+    transition: opacity 0.25s cubic-bezier(0.3, 0.5, 0.8, 1)
+
+.fade-enter,
+.fade-leave-to
+    opacity: 0
+
+// helpers
+.freeze
+    pointer-events: none
+.x
+    display: none
+svg
+    height: 100%
