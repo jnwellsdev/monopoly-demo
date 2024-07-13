@@ -1,0 +1,51 @@
+
+$cnw-primary: #156cd3
+$cnw-secondary: #0736a5
+$cnw-black: #0c3081
+$cnw-white: #f1f8ff
+//
+$cnw-primary-v1: #6138f5
+$cnw-secondary-v1: #4226a8
+$cnw-black-v1: #392386
+$cnw-white-v1: #f8faff
+//
+$cnw-c1: #ce0d0d
+$cnw-c2: #ffaa00
+$cnw-c3: #008558
+$cnw-c4: #1f69ff
+$cnw-c5: #5632d8
+$cnw-c6: #1d49aa
+$cnw-c7: #e6004d
+$cnw-c8: #e64f00
+
+$cnw-shdw: -0.8rem 0.8rem 0.2rem rgb(27 19 57 / 15%), -1.5rem 1.5em 3rem rgb(27 19 57 / 15%)
+$cnw-shdw-modal: 0.2rem 0.1rem 1rem rgb(18 22 46 / 25%), -0.5rem 0.5rem 0.3rem rgb(18 22 46 / 5%)
+
+//
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+@mixin x-font
+    font-family: 'XfinityBrownWeb Regular Web', sans-serif
+    font-size: 1rem
+@mixin x-font-bold
+    font-family: 'XfinityBrownWeb Bold Web', sans-serif
+    font-size: 1rem
+@mixin full
+    position: absolute
+    width: 100%
+    height: 100%
+
+// animations
+.fade-enter-active, .fade-leave-active
+    transition: opacity 0.35s
+.fade-enter, .fade-leave-to
+    opacity: 0
+
+// helpers
+.x
+    display: none
+.freeze
+    pointer-events: none

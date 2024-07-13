@@ -1,3 +1,5 @@
+import webpack from 'webpack'
+
 export default {
   ssr: false,
   target: 'static',
@@ -18,7 +20,7 @@ export default {
 
   // css: [],
   styleResources: {
-    sass: ['./assets/sass/*.sass'],
+    sass: ['./assets/sass/index.sass'],
 },
 
   plugins: [],
@@ -33,37 +35,34 @@ export default {
   modules: [
     '@nuxtjs/style-resources',
   ],
-
   build: {
     postcss: {
-      preset: {
-          autoprefixer: {
-              grid: true,
-          },
-          extend(config) {
-              config.module.rules.push({
-                  test: /\.ya?ml$/,
-                  type: 'json',
-                  use: 'yaml-loader',
-              },
-              // {
-              //     test: /\.(ogg|mp3|wav|mpe?g)$/i,
-              //     loader: 'file-loader',
-              //     options: {
-              //         name: '[path][name].[ext]',
-              //         esModule: false,
-              //     }
-              // }
-              )
-          }
-      },
-  }
-  },
+        preset: {
+            autoprefixer: {
+                grid: true,
+            },
+        },
+    },
+    extend(config) {
+        config.module.rules.push({
+            test: /\.ya?ml$/,
+            type: "json",
+            use: "yaml-loader",
+        }, {
+            test: /\.(ogg|mp3|wav|mpe?g)$/i,
+            loader: "file-loader",
+            options: {
+                name: "[path][name].[ext]",
+                esModule: false,
+            },
+        });
+    },
+},
     router: {
-        base: process.env.NODE_ENV === 'production' ? '/mobile-match/game' : '/',
+        base: process.env.NODE_ENV === 'production' ? '/' : '/',
     },
     generate: {
-        dir: 'game',
+        dir: 'dist',
     },
     server: {
         host: '0.0.0.0', // default: localhost

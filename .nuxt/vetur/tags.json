@@ -1,5 +1,17 @@
 {
-  "Main": {
-    "description": "Auto imported from components/Main.vue"
+  "Board": {
+    "description": "Auto imported from components/Board.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "MainScreen": {
+    "description": "Auto imported from components/MainScreen.vue"
+  },
+  "Modal": {
+    "description": "Auto imported from components/Modal.vue"
+  },
+  "Side": {
+    "description": "Auto imported from components/Side.vue"
   }
 }

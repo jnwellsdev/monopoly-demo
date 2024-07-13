@@ -4,9 +4,8 @@ import { decode, parsePath, withoutBase, withoutTrailingSlash, normalizeURL } fr
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
 import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
-import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../node_modules/@nuxtjs/tailwindcss/dist/runtime/tailwind.css'
+import '..\\node_modules\\@nuxtjs\\tailwindcss\\dist\\runtime\\tailwind.css'
 
 import _6f6c098b from './layouts/default.vue'
 
@@ -45,7 +44,7 @@ export default {
       }
     }, [
       loadingEl,
-      h(NuxtBuildIndicator),
+
       transitionEl
     ])
   },
@@ -125,20 +124,12 @@ export default {
       }
       this.$loading.start()
 
-      const promises = pages.map((page) => {
-        const p = []
+      const promises = pages.map(async (page) => {
+        let p = []
 
         // Old fetch
         if (page.$options.fetch && page.$options.fetch.length) {
           p.push(promisify(page.$options.fetch, this.context))
-        }
-        if (page.$fetch) {
-          p.push(page.$fetch())
-        } else {
-          // Get all component instance to call $fetch
-          for (const component of getChildrenComponentInstancesUsingFetch(page.$vnode.componentInstance)) {
-            p.push(component.$fetch())
-          }
         }
 
         if (page.$options.asyncData) {
@@ -150,6 +141,19 @@ export default {
                 }
               })
           )
+        }
+
+        // Wait for asyncData & old fetch to finish
+        await Promise.all(p)
+        // Cleanup refs
+        p = []
+
+        if (page.$fetch) {
+          p.push(page.$fetch())
+        }
+        // Get all component instance to call $fetch
+        for (const component of getChildrenComponentInstancesUsingFetch(page.$vnode.componentInstance)) {
+          p.push(component.$fetch())
         }
 
         return Promise.all(p)
@@ -180,15 +184,12 @@ export default {
           errorLayout = errorLayout(this.context)
         }
 
+        this.nuxt.errPageReady = true
         this.setLayout(errorLayout)
       }
     },
 
     setLayout (layout) {
-      if(layout && typeof layout !== 'string') {
-        throw new Error('[nuxt] Avoid using non-string value as layout property.')
-      }
-
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }

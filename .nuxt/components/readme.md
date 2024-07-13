@@ -6,4 +6,8 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<Main>` | `<main>` (components/Main.vue)
+- `<Board>` | `<board>` (components/Board.vue)
+- `<Logo>` | `<logo>` (components/Logo.vue)
+- `<MainScreen>` | `<main-screen>` (components/MainScreen.vue)
+- `<Modal>` | `<modal>` (components/Modal.vue)
+- `<Side>` | `<side>` (components/Side.vue)

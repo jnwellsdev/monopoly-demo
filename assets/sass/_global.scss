@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "XfinityBrownWeb Bold Web";
+  src: url("/fonts/XfinityBrownWeb-Bold.eot");
+  src: url("/fonts/XfinityBrownWeb-Bold.woff") format("woff"),
+    url("/fonts/XfinityBrownWeb-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "XfinityBrownWeb Regular Web";
+  src: url("/fonts/XfinityBrownWeb-Regular.eot");
+  src: url("/fonts/XfinityBrownWeb-Regular.woff") format("woff"),
+    url("/fonts/XfinityBrownWeb-Regular.woff2") format("woff2");
+}
+
+$cnw-primary: #156cd3;
+$cnw-secondary: #0736a5;
+$cnw-black: #0c3081;
+$cnw-white: #f1f8ff;

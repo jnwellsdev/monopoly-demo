@@ -1,39 +1,152 @@
-// fonts
+@import global.sass
 
-// colors
+//		
+h1
+    @include x-font-bold
+    font-size: 2.15rem
+    text-transform: uppercase
+    letter-spacing: 0.1rem
 
-// css variables
+h2
+    @include x-font-bold
+    font-size: 1.85rem
+    text-transform: uppercase
 
-// mixins
-@mixin flex-center
-    display: flex
-    justify-content: center
-    align-items: center
+h3
+    @include x-font-bold
+    font-size: 1.675rem
+
+h4
+    @include x-font-bold
+    font-size: 1.5rem
+    letter-spacing: 0.05rem
+p
+    @include x-font
+    font-size: 1.25rem
+    letter-spacing: 0.05rem
+    line-height: 1.2
+button
+    width: 50%
+    max-height: 58px
+    background: $cnw-white
+    margin: 0.15rem
+    padding: 0.85rem 0.25rem 0.65rem 0.25rem
+    border: 3px solid lighten($cnw-primary, 2.5%)
+    border-radius: 6px
+    @include x-font-bold
+    font-size: 1.2rem
+    color: $cnw-secondary
+    transition: border 0.25s ease, background 0.25s ease
+    appearance: none
+    cursor: pointer
+    &:hover
+        border: 3px solid $cnw-secondary
+        background: white
+    &.primary
+        background: $cnw-primary
+        border: 3px solid $cnw-primary
+        color: $cnw-white
+        &:hover
+            border: 3px solid $cnw-primary
+            background: $cnw-secondary
+    &.secondary
+        background: $cnw-white
+        border: 3px solid $cnw-secondary
+        color: $cnw-secondary
+        &:hover
+            border: 3px solid $cnw-primary
+            color: $cnw-primary
+            background: $cnw-white
+// theme
+#app.v1
+    button
+        background: $cnw-white-v1
+        border: 3px solid $cnw-primary-v1
+        border-radius: 6px
+        color: $cnw-secondary-v1
+        &:hover
+            border: 3px solid $cnw-secondary-v1
+            background: white
+        &.primary
+            background: $cnw-primary-v1
+            border: 3px solid $cnw-primary-v1
+            color: $cnw-white-v1
+            &:hover
+                border: 3px solid $cnw-primary-v1
+                background: $cnw-secondary-v1
+        &.secondary
+            background: $cnw-white-v1
+            border: 3px solid $cnw-secondary-v1
+            color: $cnw-secondary-v1
+            &:hover
+                border: 3px solid $cnw-primary-v1
+                color: $cnw-primary-v1
+                background: $cnw-white-v1
+// frontend alert
+.alert
+    background-color: $cnw-primary
+    color: $cnw-white
+    height: 32px
+    padding: 0.25rem 1.5rem
     text-align: center
-@mixin full-center
-    display: flex
-    justify-content: center
-    align-items: center
-    position: absolute
-    width: 100%
-    height: 100%
-
-// animations
-.fade-enter-active
-    transition: opacity 0.25s ease
-    transition-delay: 0.25s
-
-.fade-leave-active
-    transition: opacity 0.25s cubic-bezier(0.3, 0.5, 0.8, 1)
-
-.fade-enter,
-.fade-leave-to
-    opacity: 0
-
-// helpers
-.freeze
-    pointer-events: none
-.x
-    display: none
-svg
-    height: 100%
+// media
+@media (max-width: 1280px)
+    .modal-module
+        table
+            width: 90% !important
+@media (max-width: 980px)
+    .main-screen
+        padding: 2.5rem 18vw !important
+        section
+            flex-flow: column
+            align-items: center
+            .side-module
+                width: 100%
+                margin: 0
+                order: 2
+            .board-module
+                width: 100%
+                margin-bottom: 2rem
+                order: 1
+    .logo-module
+        display: flex
+        justify-content: center
+    .modal-module
+        .modal, .close
+            width: 80% !important
+@media (max-width: 720px)
+    .main-screen
+        padding: 2.5rem 8vw 18vw 8vw !important
+        margin: 0 0 0 0 !important
+    .logo-module
+        display: flex
+        justify-content: center
+        .card.logo
+            padding: 0.25rem
+            img
+                width: 94% !important
+    .modal-module
+        .modal, .close, table
+            width: 94% !important
+@media (max-width: 550px)
+    .modal-module
+        .modal
+            header
+                padding: 1rem 2rem !important
+                z-index: 1
+                h2
+                    font-size: 1.8rem !important
+            &.response
+                footer
+                    flex-flow: column
+                    height: 100% !important
+                    button
+                        margin: 5px 0
+            &.claim
+                .pieces
+                    height: 310px !important
+                    width: 190px !important
+                    transform: translate(calc(50% - 95px), 0) !important
+            &.redeem
+                input
+                    width: 80% !important

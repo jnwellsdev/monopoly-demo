@@ -1,0 +1,257 @@
+introScreen:
+  title: Forensic Expert
+  head: What do YOU see?
+  copy: SHOWTIME Spin is a dizzyingly fun test of just how much you know about fan-favorite SHOWTIME programs, plus new Originals like THE FIRST LADY and THE MAN WHO FELL TO EARTH!
+  copy2a: Answer 7 or more questions correctly and you could win up to <strong>$125</strong> in <strong>eGift Cards!</strong>
+  copy2b: Answer 7 or more questions correctly and you could win a <strong>$50 eGift Card!</strong>
+  button: I'm Ready
+  callout: New SHOWTIME Originals! THE FIRST LADY premieres April 17, and the sci-fi drama THE MAN WHO FELL TO EARTH premieres April 24.
+howtoScreen:
+  title: Spin To Play
+  copy: Click the SHO button in the middle to spin the wheel! Get at least 7 right and you could win
+  copy2a: Click the SHO button in the middle to spin the wheel! Get at least 7 right and you could win a <strong>$25 eGift Card </strong>(300 winners) or our Grand Prize – a <strong>$100 eGift Card</strong> (200 winners).
+  copy2b: Click the SHO button in the middle to spin the wheel! Get at least 7 right and you could win a <strong>$50 eGift Card.</strong>
+  button: Spin The Wheel!
+questions:
+  category1:
+    - title: THE FIRST LADY
+      text: THE FIRST LADY interweaves the unexplored stories of three women who changed the world, featuring Michelle Pfeiffer as Betty Ford; Gillian Anderson as Eleanor Roosevelt; and this Oscar® Winner as Michelle Obama?
+      answers:
+        - Halle Berry
+        - Viola Davis
+        - Regina King
+        - Jennifer Hudson
+      result: <i>“When they go low, we go high!”</i> Viola Davis, who won an Oscar® for Best Supporting Actress for her role in <i>Fences</i>, will take on the role of Michelle Obama.
+      right: CORRECT!
+      wrong: INCORRECT
+      image1: /imgs/app/q-img-1A.jpg
+      image2: /imgs/app/q-img-1A2.jpg
+      correct: 2
+    - title: THE FIRST LADY
+      text: In the new SHOWTIME Original drama, THE FIRST LADY, Gillian Anderson plays this First Lady, who was also the United States’ first delegate to the United Nations.
+      answers:
+        - Mamie Eisenhower
+        - Florence Harding
+        - “Lady Bird” Johnson
+        - Eleanor Roosevelt
+      result: Known for her performances in <i>The X-Files</i>, <i>The Crown</i> and more, Anderson will portray the woman who redefined the role of the First Lady, Eleanor Roosevelt.
+      right: FIRST-RATE ANSWER
+      wrong: YOU MISSED THE MARK
+      image1: /imgs/app/q-img-1B2.jpg
+      image2: /imgs/app/q-img-1B.jpg
+      correct: 4
+  category2:
+    - title: THE MAN WHO FELL TO EARTH
+      text: The SHOWTIME Original series, THE MAN WHO FELL TO EARTH, is a mind-bending sci-fi story starring Chiwetel Ejiofor, set almost 40 years after the trippy 1976 film featuring this “Starman.”
+      answers:
+        - David Bowie
+        - Jeff Daniels
+        - Kyle Chandler
+        - Steven Tyler
+      result: David Bowie portrayed the alien in the 1976 film. In the new series, Chiwetel Ejiofor (<i>12 Years a Slave</i>) plays an alien with a mission to save his own planet from an environmental catastrophe.
+      right: YOU’RE A ROCK STAR!
+      wrong: THAT ANSWER FELL OFF
+      image1: /imgs/app/q-img-2A.jpg
+      image2: /imgs/app/q-img-2B.jpg
+      correct: 1
+    - title: THE MAN WHO FELL TO EARTH
+      text: The new SHOWTIME Original series THE MAN WHO FELL TO EARTH brings the science-fiction genre to SHOWTIME! What’s the popular abbreviation for science fiction?
+      answers:
+        - Sen-fic
+        - Sci-fi
+        - Sci-fic
+        - None of the above
+      result: THE MAN WHO FELL TO EARTH brings sci-fi to SHOWTIME, and look for even more genre programming like horror and fantasy in 2022 and 2023.
+      right: YOU GOT IT!
+      wrong: SORRY, WRONG ANSWER
+      image1: /imgs/app/q-img-2A.jpg
+      image2: /imgs/app/q-img-2B.jpg
+      correct: 2
+  category3:
+    - title: ZIWE
+      text: Before her self-titled late-night variety series, Ziwe Fumudoh was a writer for multiple seasons of this SHOWTIME late-night comedy series.
+      answers:
+        - The Circus
+        - Desus & Mero
+        - Flatbush Misdemeanors
+        - Vice
+      result: And Ziwe has even more comedy credentials than DESUS & MERO. She’s written for the satirical website The Onion and was a writer and talent on OUR CARTOON PRESIDENT.
+      right: NAILED IT!
+      wrong: SORRY – Z-ERO POINTS
+      image1: /imgs/app/q-img-3A.jpg
+      image2: /imgs/app/q-gif-3A.gif
+      correct: 2
+    - title: ZIWE
+      text: Which of these sometimes-controversial topics get featured on the hilarious, late-night variety series ZIWE?
+      answers:
+        - Ashy Leg Syndrome
+        - Critical Race Theory
+        - Black Capitalism
+        - All of the Above
+      result: ZIWE is not afraid to tackle any topic, including all of the above through interviews, sketches and signature musical numbers you have to watch to believe!
+      right: YOU’RE RIGHT!
+      wrong: SORRY
+      image1: /imgs/app/q-img-3B.jpg
+      image2: /imgs/app/q-gif-3A.gif
+      correct: 4
+  category4:
+    - title: SHOWTIME ORIGINALS
+      text: Back for their fourth season, this award-winning duo discusses hot topics and chats with celebrity guests like Denzel Washington, Mark Wahlberg and Tom Holland.
+      answers:
+        - Dan & Kevin
+        - Desus & Mero
+        - Dexter & Dee Dee
+        - Prince & Chuck
+      result: The WGA Award-winning weekly late-night talk show hosted by Desus Nice and The Kid Mero brings the laughs as the duo discusses pop culture, sports, music, politics and more.
+      right: YERR!
+      wrong: NOT SO MUCH
+      image1: /imgs/app/q-img-4A2.jpg
+      image2: /imgs/app/q-gif-4A.gif
+      correct: 2
+    - title: SHOWTIME ORIGINALS
+      text: The docuseries VICE was nominated for Primetime Emmy® Awards in 2020 and 2021, and also won what prestigious award for powerful, enlightening and invigorating stories in television, radio and online media just last year?
+      answers:
+        - Hugo Award
+        - Peabody Award
+        - Satellite Award
+        - Sherman Award
+      result: VICE was a News Peabody Award-winner for the segment “Losing Ground,” that explores the vulnerability of black landowners in the South.
+      right: AWARD-WINNING ANSWER
+      wrong: YOU’LL GET THE NEXT ONE
+      image1: /imgs/app/q-img-4B.jpg
+      image2: /imgs/app/q-img-4B.jpg
+      correct: 2
+  category5:
+    - title: I LOVE THAT FOR YOU
+      text: The SHOWTIME Original I LOVE THAT FOR YOU is inspired by the childhood of the new comedy series’ creator and star, who is also a <i>Saturday Night Live</i> alum.
+      answers:
+        - Amy Poehler
+        - Kate McKinnon
+        - Kristen Wiig
+        - Vanessa Bayer
+      result: Vanessa Bayer is best known for her SNL impressions of Miley Cyrus and Rachel from Friends, along with characters like newscaster of tomorrow, Laura Parsons.
+      right: PRETTY COOL, YA'LL!
+      wrong: WE DON’T LOVE THAT
+      image1: /imgs/app/q-img-5B.jpg
+      image2: /imgs/app/q-img-5A.jpg
+      correct: 4
+    - title: I LOVE THAT FOR YOU
+      text: On the new SHOWTIME comedy, I LOVE THAT FOR YOU, Joanna (played by SNL’s Vanessa Bayer) dreams of becoming a TV host for what type of channel?
+      answers:
+        - Home-shopping network
+        - Music channel
+        - News network
+        - Sports channel
+      result: Joanna dreams of one day talking up salad shooters, cubic zirconias and eye shadow made from avocados on a home shopping network.
+      right: SOLD!
+      wrong: NO SALE!
+      image1: /imgs/app/q-img-5B.jpg
+      image2: /imgs/app/q-img-5A.jpg
+      correct: 1
+  category6:
+    - title: SHOWTIME MOVIES
+      text: After seven seasons and 10 Emmy® nominations, this gritty SHOWTIME fan-favorite got his own movie, which customers can watch right now on SHOWTIME.
+      answers:
+        - Saul Berenson (Homeland)
+        - Ray Donovan<br>(Ray Donovan)
+        - Frank Gallagher (Shameless)
+        - Chuck Rhoades (Billions)
+      result: "You can watch Eight-time Emmy® nominee Liev Schreiber in RAY DONOVAN: THE MOVIE right now on SHOWTIME. If you haven’t, don’t let Ray find out."
+      right: YOU KNOCKED THAT ONE OUT OF THE YAHD!
+      wrong: NA-AH
+      image1: /imgs/app/q-img-6A.jpg
+      image2: /imgs/app/q-gif-6A.gif
+      correct: 2
+    - title: SHOWTIME MOVIES
+      text: The critically acclaimed film THE GREEN KNIGHT, starring Dev Patel (<i>Slumdog Millionaire</i>), is rooted in what classic legend?
+      answers:
+        - Beowulf
+        - Don Quixote
+        - King Arthur
+        - The Odyssey
+      result: THE GREEN KNIGHT follows Gawain, the nephew of the legendary King Arthur, on a deadly quest to seek out The Green Knight.
+      right: BELIEVE IT!
+      wrong: DON’T THINK SO
+      image1: /imgs/app/q-img-6B.jpg
+      image2: /imgs/app/q-gif-6B.gif
+      correct: 3
+    - title: SHOWTIME MOVIES
+      text: The twisted comedy ZOLA, that follows a waitress’s see-it-to-believe-it road trip involving a nameless pimp, an idiot boyfriend and ruthless Tampa gangsters, is based on ________.
+      answers:
+        - A documentary short
+        - A tweet thread
+        - The life of star<br>Taylour Paige
+        - The novel of the<br>same name
+      result: Dubbed “The Greatest Stripper Saga Ever Tweeted,” ZOLA is based on a 148-tweet thread posted by Aziah "Zola" King in 2015. Her story was also featured in <i>Rolling Stone</i>.
+      right: BELIEVE IT!
+      wrong: DON’T THINK SO
+      image1: /imgs/app/q-img-6C.jpg
+      image2: /imgs/app/q-gif-6C.gif
+      correct: 2
+  category7:
+    - title: SHOWTIME DRAMAS
+      text: The Chi is a powerful coming-of-age drama series about an interconnected group of working-class African-Americans on the volatile south side of what American city?
+      answers:
+        - Charlottesville, VA
+        - Charlotte, NC
+        - Charleston, SC
+        - Chicago, IL
+      result: Emmy®-winning show creator Lena Waithe grew up on the South Side of Chicago and even guest-starred on THE CHI as Chicago mayoral candidate Camille Hallaway.
+      right: YOU KNOW YOUR SHOWTIME
+      wrong: NOT THIS TIME
+      image1: /imgs/app/q-img-7A.jpg
+      image2: /imgs/app/q-gif-7A.gif
+      correct: 4
+    - title: SHOWTIME DRAMAS
+      text: In the critically acclaimed SHOWTIME thriller YELLOWJACKETS, what is the mysterious symbol that occurs throughout the first season?
+      answers:
+        - A crashed plane
+        - A soccer ball
+        - A stick figure
+        - A wasp
+      result: The girls discover the stick figure symbol after their plane crashes in the woods, but it suddenly resurfaces 25 years lateunder startling circumstances.
+      right: OOH, ELITE ANSWER
+      wrong: OOH, CRASH & BURN
+      image1: /imgs/app/q-img-7B.jpg
+      image2: /imgs/app/q-gif-7B.gif
+      correct: 3
+  category8:
+    - title: KNOW YOUR SHOWTIME
+      text: This free service for all SHOWTIME subscribers lets them watch live and on demand programs anywhere. Plus, they can download full episodes and movies to any device and watch later.
+      answers:
+        - iSHO
+        - SHO ON THE ROAD
+        - SHOWTIME ANYTIME
+        - SHOWTIME ANYWHERE
+      result: SHOWTIME ANYTIME® delivers instant and unlimited access to Original series, movies, hard-hitting sports and more via computers, tablets, phones, streaming devices and gaming consoles.
+      right: YOU’RE A GENIUS ALL THE TIME
+      wrong: BETTER LUCK NEXT TIME
+      image1: /imgs/app/q-img-8C.jpg
+      image2: /imgs/app/q-img-8A.jpg
+      correct: 3
+    - title: KNOW YOUR SHOWTIME
+      text: SHOPlace is your one-stop shop for everything you need to know about SHOWTIME with __________.
+      answers:
+        - Games and prizes
+        - Info on fan-favorite and upcoming programs
+        - Full episodes of select SHOWTIME Originals
+        - All of the Above
+      result: "Yup, you can find all that on SHOPlace. To see full episodes of SHOWTIME Originals like DEXTER®: NEW BLOOD and YELLOWJACKETS, click on “WATCH EPISODES” in the menu bar."
+      right: HOW DID YOU GET SO SMART?
+      wrong: NOT WHAT WE WERE LOOKING FOR
+      image1: /imgs/app/q-img-8B.png
+      image2: /imgs/app/q-img-8B.png
+      correct: 4
+results:
+  win:
+    title: YOU’RE A SPIN-SATION!
+    copy1a: From A to ZIWE, you sure know your SHOWTIME! Now register and you could win up to $125 in eGift Cards! Then play SHOWTIME Spin again to test more of your SHOWTIME knowledge.
+    copy1b: From A to ZIWE, you sure know your SHOWTIME! Now register and you could win a $50 eGift Card! Then play SHOWTIME Spin again to test more of your SHOWTIME knowledge.
+    image: /imgs/app/result-win-1.gif
+    button: ENTER HERE
+lose:
+  title: LOOKS LIKE YOU MISSED A FEW
+  copy1a: But that’s okay, because second chances (just like spinning wheels) come back around. Spin again and you could win up to $125 in eGift Cards!
+  copy1b: But that’s okay, because second chances (just like spinning wheels) come back around. Spin again and you could win a $50 eGift Card!
+  image: /imgs/app/result-lose-1.gif
+  button: PLAY AGAIN
