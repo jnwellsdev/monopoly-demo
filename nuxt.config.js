@@ -5,7 +5,7 @@ export default {
   target: 'static',
 
   head: {
-    title: 'nspyg starter',
+    title: 'Xfinity Monopoly Demo',
     htmlAttrs: {
       lang: 'en'
     },
