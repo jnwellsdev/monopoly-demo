@@ -88,7 +88,7 @@ methods: {
 		  .to(properties, { scale: 1, opacity: 1, duration: 0.0005, stagger: 0.035, ease: 'elastic.out(1,0.3)' }, '< 0.25')
           .add(() => this.playNumber('add'), '< 2.5>')
           .add(() => this.playButton(), '> 0.25')
-          .add(() => this.modal === false && this.$store.commit('handleModal', 'claim'), '> 3.5')
+          .add(() => this.modal === false && this.$store.commit('handleModal', 'claim'), '> 1')
 
 	},
 	playVideo() {

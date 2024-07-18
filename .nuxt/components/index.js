@@ -1,8 +1,8 @@
-export const Board = () => import('../..\\components\\Board.vue' /* webpackChunkName: "components/board" */).then(c => wrapFunctional(c.default || c))
-export const Logo = () => import('../..\\components\\Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c))
-export const MainScreen = () => import('../..\\components\\MainScreen.vue' /* webpackChunkName: "components/main-screen" */).then(c => wrapFunctional(c.default || c))
-export const Modal = () => import('../..\\components\\Modal.vue' /* webpackChunkName: "components/modal" */).then(c => wrapFunctional(c.default || c))
-export const Side = () => import('../..\\components\\Side.vue' /* webpackChunkName: "components/side" */).then(c => wrapFunctional(c.default || c))
+export { default as Board } from '../..\\components\\Board.vue'
+export { default as Logo } from '../..\\components\\Logo.vue'
+export { default as MainScreen } from '../..\\components\\MainScreen.vue'
+export { default as Modal } from '../..\\components\\Modal.vue'
+export { default as Side } from '../..\\components\\Side.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
